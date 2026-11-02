@@ -1,0 +1,291 @@
+[
+  {
+    "id": "AUCE",
+    "name": "Andhra University College of Engineering (Autonomous), Visakhapatnam",
+    "code": "AUCE",
+    "type": "State University / Govt",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 43 (University)",
+    "naacGrade": "A++",
+    "tuitionFee": 45000,
+    "hostelFee": 38000,
+    "messFee": 34000,
+    "otherFee": 8000,
+    "totalAnnualExpense": 125000,
+    "placementAvgLPA": 7.8,
+    "placementHighestLPA": 38.0,
+    "facilities": [
+      "Central Digital Library with IEEE Access",
+      "High-Performance Supercomputing Cluster",
+      "Separate AC & Non-AC Hostels for Boys & Girls",
+      "ATAL Incubation Center & Startup Hub",
+      "Olympic-standard Sports Complex & Gymnasium"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 120, "cutoffs": { "OC": 2200, "BCA": 3800, "BCB": 3400, "SC": 9500, "ST": 14000, "EWS": 2400 } },
+      { "branch": "Artificial Intelligence and Data Science", "seats": 60, "cutoffs": { "OC": 3100, "BCA": 5200, "BCB": 4800, "SC": 12000, "ST": 18000, "EWS": 3300 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 120, "cutoffs": { "OC": 4800, "BCA": 7500, "BCB": 6900, "SC": 17500, "ST": 24000, "EWS": 5100 } },
+      { "branch": "Information Technology", "seats": 60, "cutoffs": { "OC": 3900, "BCA": 6400, "BCB": 5900, "SC": 15000, "ST": 21000, "EWS": 4200 } }
+    ]
+  },
+  {
+    "id": "JNTK",
+    "name": "JNTU College of Engineering (Autonomous), Kakinada",
+    "code": "JNTK",
+    "type": "State University / Govt",
+    "city": "Kakinada",
+    "district": "Kakinada",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 78 (Engineering)",
+    "naacGrade": "A+",
+    "tuitionFee": 50000,
+    "hostelFee": 40000,
+    "messFee": 35000,
+    "otherFee": 7500,
+    "totalAnnualExpense": 132500,
+    "placementAvgLPA": 7.2,
+    "placementHighestLPA": 34.5,
+    "facilities": [
+      "110-acre Green Campus",
+      "Central Computing Facility",
+      "Student Hostels with RO Purified Water",
+      "Robotics Research Lab",
+      "Auditorium 1500 Capacity"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 120, "cutoffs": { "OC": 3100, "BCA": 4900, "BCB": 4500, "SC": 11500, "ST": 16500, "EWS": 3300 } },
+      { "branch": "Artificial Intelligence and Machine Learning", "seats": 60, "cutoffs": { "OC": 3800, "BCA": 6100, "BCB": 5600, "SC": 13500, "ST": 19500, "EWS": 4000 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 120, "cutoffs": { "OC": 5900, "BCA": 8900, "BCB": 8200, "SC": 19500, "ST": 27000, "EWS": 6200 } }
+    ]
+  },
+  {
+    "id": "SVUCE",
+    "name": "Sri Venkateswara University College of Engineering (SVUCE), Tirupati",
+    "code": "SVUCE",
+    "type": "State University / Govt",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 85 (University)",
+    "naacGrade": "A+",
+    "tuitionFee": 48000,
+    "hostelFee": 39000,
+    "messFee": 33000,
+    "otherFee": 7000,
+    "totalAnnualExpense": 127000,
+    "placementAvgLPA": 6.9,
+    "placementHighestLPA": 31.0,
+    "facilities": [
+      "Foothills Scenic Campus 200+ Acres",
+      "Digital University Archives",
+      "Student Hostels with Modern Dining",
+      "Sports Stadium & Gymnasium"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 120, "cutoffs": { "OC": 3600, "BCA": 5600, "BCB": 5100, "SC": 12800, "ST": 18000, "EWS": 3800 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 120, "cutoffs": { "OC": 6800, "BCA": 9800, "BCB": 9100, "SC": 21000, "ST": 29000, "EWS": 7200 } }
+    ]
+  },
+  {
+    "id": "VRSEC",
+    "name": "Velagapudi Ramakrishna Siddhartha Engineering College (Autonomous), Vijayawada",
+    "code": "VRSEC",
+    "type": "Autonomous Private",
+    "city": "Vijayawada",
+    "district": "NTR / Krishna",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 121 (Engineering)",
+    "naacGrade": "A+",
+    "tuitionFee": 73000,
+    "hostelFee": 75000,
+    "messFee": 38000,
+    "otherFee": 12000,
+    "totalAnnualExpense": 198000,
+    "placementAvgLPA": 6.8,
+    "placementHighestLPA": 44.0,
+    "facilities": [
+      "Siemens Center of Excellence",
+      "Apple iOS Lab & Cisco Academy",
+      "Secured Campus Hostels with Wi-Fi",
+      "Active Career Placement Cell"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 180, "cutoffs": { "OC": 5800, "BCA": 8600, "BCB": 7900, "SC": 18500, "ST": 26000, "EWS": 6200 } },
+      { "branch": "Information Technology", "seats": 120, "cutoffs": { "OC": 8200, "BCA": 12000, "BCB": 11000, "SC": 24500, "ST": 34000, "EWS": 8800 } },
+      { "branch": "Artificial Intelligence and Data Science", "seats": 120, "cutoffs": { "OC": 6900, "BCA": 10200, "BCB": 9500, "SC": 21500, "ST": 30000, "EWS": 7400 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 180, "cutoffs": { "OC": 11200, "BCA": 16500, "BCB": 15200, "SC": 32000, "ST": 44000, "EWS": 12000 } }
+    ]
+  },
+  {
+    "id": "GVPCE",
+    "name": "Gayatri Vidya Parishad College of Engineering (Autonomous), Visakhapatnam",
+    "code": "GVPCE",
+    "type": "Autonomous Private",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 128 (Engineering)",
+    "naacGrade": "A",
+    "tuitionFee": 72000,
+    "hostelFee": 70000,
+    "messFee": 36000,
+    "otherFee": 10000,
+    "totalAnnualExpense": 188000,
+    "placementAvgLPA": 6.4,
+    "placementHighestLPA": 41.5,
+    "facilities": [
+      "Hilltop Scenic Campus",
+      "Robotics & AI Center",
+      "Separate Boy & Girl Hostels",
+      "Industry Incubator"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 180, "cutoffs": { "OC": 6400, "BCA": 9400, "BCB": 8700, "SC": 20000, "ST": 28000, "EWS": 6900 } },
+      { "branch": "Information Technology", "seats": 120, "cutoffs": { "OC": 9200, "BCA": 13500, "BCB": 12400, "SC": 27000, "ST": 37000, "EWS": 9800 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 180, "cutoffs": { "OC": 12500, "BCA": 18000, "BCB": 16800, "SC": 35000, "ST": 48000, "EWS": 13400 } }
+    ]
+  },
+  {
+    "id": "RVRJC",
+    "name": "RVR & JC College of Engineering (Autonomous), Guntur",
+    "code": "RVRJC",
+    "type": "Autonomous Private",
+    "city": "Guntur",
+    "district": "Guntur",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 151-200 Band",
+    "naacGrade": "A+",
+    "tuitionFee": 69800,
+    "hostelFee": 65000,
+    "messFee": 35000,
+    "otherFee": 9000,
+    "totalAnnualExpense": 178800,
+    "placementAvgLPA": 5.8,
+    "placementHighestLPA": 30.0,
+    "facilities": [
+      "37-acre Campus",
+      "Digital Library with 1.2 Lakh Books",
+      "Hostels with Gymnasium",
+      "Fleet of 80+ Buses"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 180, "cutoffs": { "OC": 9800, "BCA": 14500, "BCB": 13200, "SC": 29000, "ST": 40000, "EWS": 10500 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 180, "cutoffs": { "OC": 17500, "BCA": 25000, "BCB": 23200, "SC": 46000, "ST": 62000, "EWS": 18800 } }
+    ]
+  },
+  {
+    "id": "MBU",
+    "name": "Mohan Babu University (formerly Sree Vidyanikethan), Tirupati",
+    "code": "MBU",
+    "type": "Deemed University",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 165 (University)",
+    "naacGrade": "A+",
+    "tuitionFee": 120000,
+    "hostelFee": 85000,
+    "messFee": 45000,
+    "otherFee": 15000,
+    "totalAnnualExpense": 265000,
+    "placementAvgLPA": 6.8,
+    "placementHighestLPA": 60.0,
+    "facilities": [
+      "100-acre Smart Campus",
+      "Apple Mac Labs & Hackathon Hub",
+      "Air-conditioned Hostels",
+      "Multi-speciality Medical Clinic"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 240, "cutoffs": { "OC": 11500, "BCA": 17000, "BCB": 15500, "SC": 34000, "ST": 47000, "EWS": 12300 } },
+      { "branch": "Artificial Intelligence and Machine Learning", "seats": 120, "cutoffs": { "OC": 13500, "BCA": 19500, "BCB": 18000, "SC": 38000, "ST": 52000, "EWS": 14400 } },
+      { "branch": "Electronics and Communication Engineering", "seats": 180, "cutoffs": { "OC": 21000, "BCA": 29500, "BCB": 27500, "SC": 52000, "ST": 68000, "EWS": 22500 } }
+    ]
+  },
+  {
+    "id": "KLU",
+    "name": "Koneru Lakshmaiah Education Foundation (KL Deemed University), Vaddeswaram",
+    "code": "KLU",
+    "type": "Deemed University",
+    "city": "Vijayawada / Guntur",
+    "district": "Guntur",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 28 (Universities)",
+    "naacGrade": "A++",
+    "tuitionFee": 240000,
+    "hostelFee": 110000,
+    "messFee": 50000,
+    "otherFee": 20000,
+    "totalAnnualExpense": 420000,
+    "placementAvgLPA": 7.5,
+    "placementHighestLPA": 58.0,
+    "facilities": [
+      "100-acre Fully Wi-Fi Smart Campus",
+      "Cloud & Cyber Security Labs",
+      "Luxury AC Hostels & Multi-cuisine Dining",
+      "Incubation Center with 50+ Startups"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 360, "cutoffs": { "OC": 12000, "BCA": 18000, "BCB": 16500, "SC": 36000, "ST": 49000, "EWS": 13000 } },
+      { "branch": "Artificial Intelligence and Data Science", "seats": 180, "cutoffs": { "OC": 14000, "BCA": 20500, "BCB": 19000, "SC": 40000, "ST": 54000, "EWS": 15200 } }
+    ]
+  },
+  {
+    "id": "SRKR",
+    "name": "Sagi Rama Krishnam Raju Engineering College (SRKR), Bhimavaram",
+    "code": "SRKR",
+    "type": "Autonomous Private",
+    "city": "Bhimavaram",
+    "district": "West Godavari",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 151-200 Band",
+    "naacGrade": "A+",
+    "tuitionFee": 71500,
+    "hostelFee": 62000,
+    "messFee": 34000,
+    "otherFee": 8500,
+    "totalAnnualExpense": 176000,
+    "placementAvgLPA": 5.7,
+    "placementHighestLPA": 33.0,
+    "facilities": [
+      "30-acre Lush Ecosystem",
+      "Computing Hub with 1500+ Workstations",
+      "Affordable On-Campus Hostels",
+      "Robotics Society Labs"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 180, "cutoffs": { "OC": 8900, "BCA": 13200, "BCB": 12100, "SC": 27000, "ST": 37000, "EWS": 9600 } },
+      { "branch": "Information Technology", "seats": 120, "cutoffs": { "OC": 12200, "BCA": 17800, "BCB": 16400, "SC": 34500, "ST": 47000, "EWS": 13100 } }
+    ]
+  },
+  {
+    "id": "GMRIT",
+    "name": "GMR Institute of Technology (Autonomous), Rajam",
+    "code": "GMRIT",
+    "type": "Autonomous Private",
+    "city": "Rajam",
+    "district": "Vizianagaram",
+    "state": "Andhra Pradesh",
+    "nirfRank": "Rank 180 (Engineering)",
+    "naacGrade": "A",
+    "tuitionFee": 70000,
+    "hostelFee": 60000,
+    "messFee": 34000,
+    "otherFee": 8000,
+    "totalAnnualExpense": 172000,
+    "placementAvgLPA": 5.6,
+    "placementHighestLPA": 31.0,
+    "facilities": [
+      "117-acre Eco-friendly Campus",
+      "Siemens PLM Software Center",
+      "Residential Hostels with Steam Cooking",
+      "Outdoor Cricket Stadium & Sports Complex"
+    ],
+    "courses": [
+      { "branch": "Computer Science and Engineering", "seats": 180, "cutoffs": { "OC": 11000, "BCA": 16200, "BCB": 15000, "SC": 32000, "ST": 44000, "EWS": 11800 } },
+      { "branch": "Artificial Intelligence and Data Science", "seats": 60, "cutoffs": { "OC": 13200, "BCA": 19000, "BCB": 17800, "SC": 37000, "ST": 51000, "EWS": 14100 } }
+    ]
+  }
+]
