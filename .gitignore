@@ -26,3 +26,8 @@ Thumbs.db
 
 # In-memory mongo downloads cache
 .mongodb-binaries/
+
+# Document Reports (Local Only - Do Not Push to Git)
+*.pdf
+*.docx
+
