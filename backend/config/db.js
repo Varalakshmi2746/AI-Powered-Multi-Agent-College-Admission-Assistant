@@ -4,6 +4,10 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 let mongoMemoryInstance = null;
 
 export const connectDB = async () => {
+  if (mongoose.connection.readyState === 1) {
+    return mongoose.connection;
+  }
+
   const uri = process.env.MONGODB_URI;
 
   if (uri && !uri.includes('localhost')) {
