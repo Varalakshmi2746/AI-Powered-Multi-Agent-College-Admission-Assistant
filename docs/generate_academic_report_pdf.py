@@ -1,11 +1,10 @@
 """
-Academic Project Report Generator (PDF & DOCX)
+Academic Project Report Generator (PDF) - Exact 34 Pages
+Matching GenAI_assig2.pdf reference style 1-to-1
 Institution: Prasad V. Potluri Siddhartha Institute of Technology (Autonomous)
 Department: Department of Computer Science & Engineering
-Academic Year: 2026-2027
-Course: Generative AI Course Project Report
+Academic Year: 2026-27
 Project: AI-POWERED MULTI-AGENT COLLEGE ADMISSION ASSISTANT
-Target Page Count: Exactly 34 Pages (Matching GenAI_assig2.pdf reference)
 """
 
 import os
@@ -54,14 +53,14 @@ class AcademicNumberedCanvas(canvas.Canvas):
             # Running Header
             self.setStrokeColor(colors.HexColor("#cbd5e1"))
             self.setLineWidth(0.6)
-            self.line(54, A4[1] - 40, A4[0] - 54, A4[1] - 40)
-            self.drawString(54, A4[1] - 34, "PVP Siddhartha Institute of Technology | Dept. of CSE | Generative AI Course Project")
+            self.line(54, A4[1] - 38, A4[0] - 54, A4[1] - 38)
+            self.drawString(54, A4[1] - 32, "PVP Siddhartha Institute of Technology | Dept. of CSE | Generative AI Course Project")
             
             # Running Footer
-            self.line(54, 44, A4[0] - 54, 44)
-            self.drawString(54, 32, "AI-Powered Multi-Agent College Admission Assistant")
+            self.line(54, 42, A4[0] - 54, 42)
+            self.drawString(54, 30, "AI-Powered Multi-Agent College Admission Assistant")
             page_text = f"Page {self._pageNumber} of {page_count}"
-            self.drawRightString(A4[0] - 54, 32, page_text)
+            self.drawRightString(A4[0] - 54, 30, page_text)
             self.restoreState()
 
 def generate_pdf():
@@ -74,13 +73,13 @@ def generate_pdf():
         pagesize=A4,
         leftMargin=54,
         rightMargin=54,
-        topMargin=50,
-        bottomMargin=50,
+        topMargin=48,
+        bottomMargin=48,
     )
 
     styles = getSampleStyleSheet()
 
-    # Academic Typography (Times New Roman Standard)
+    # Academic Typography conforming to Times New Roman standard
     cover_inst_style = ParagraphStyle(
         'CoverInst',
         fontName='Times-Bold',
@@ -108,8 +107,8 @@ def generate_pdf():
     cover_title_style = ParagraphStyle(
         'CoverTitle',
         fontName='Times-Bold',
-        fontSize=18,
-        leading=22,
+        fontSize=17,
+        leading=21,
         alignment=TA_CENTER,
         textColor=colors.HexColor('#1e1b4b'),
     )
@@ -124,63 +123,63 @@ def generate_pdf():
     cover_label_style = ParagraphStyle(
         'CoverLabel',
         fontName='Times-Bold',
-        fontSize=10,
-        leading=14,
+        fontSize=9.5,
+        leading=13.5,
         textColor=colors.HexColor('#0f172a'),
     )
     cover_val_style = ParagraphStyle(
         'CoverVal',
         fontName='Times-Roman',
-        fontSize=10,
-        leading=14,
+        fontSize=9.5,
+        leading=13.5,
         textColor=colors.HexColor('#334155'),
     )
 
     h1_style = ParagraphStyle(
         'AcademicH1',
         fontName='Times-Bold',
-        fontSize=13,
-        leading=16,
+        fontSize=12.5,
+        leading=15.5,
         textColor=colors.HexColor('#0f172a'),
         spaceBefore=0,
-        spaceAfter=7,
+        spaceAfter=6,
         keepWithNext=True,
     )
     h2_style = ParagraphStyle(
         'AcademicH2',
         fontName='Times-Bold',
-        fontSize=10.5,
-        leading=13.5,
+        fontSize=10.2,
+        leading=13.2,
         textColor=colors.HexColor('#1e1b4b'),
-        spaceBefore=5,
-        spaceAfter=3,
+        spaceBefore=4,
+        spaceAfter=2.5,
         keepWithNext=True,
     )
     body_style = ParagraphStyle(
         'AcademicBody',
         fontName='Times-Roman',
-        fontSize=9.2,
-        leading=12.2,
+        fontSize=9.0,
+        leading=11.8,
         alignment=TA_JUSTIFY,
         textColor=colors.HexColor('#1e293b'),
-        spaceAfter=4,
+        spaceAfter=3.5,
     )
     bullet_style = ParagraphStyle(
         'AcademicBullet',
         fontName='Times-Roman',
-        fontSize=9.0,
-        leading=11.8,
-        leftIndent=14,
-        firstLineIndent=-10,
+        fontSize=8.8,
+        leading=11.4,
+        leftIndent=12,
+        firstLineIndent=-8,
         alignment=TA_JUSTIFY,
         textColor=colors.HexColor('#1e293b'),
-        spaceAfter=3,
+        spaceAfter=2.5,
     )
     code_style = ParagraphStyle(
         'AcademicCode',
         fontName='Courier',
-        fontSize=7.2,
-        leading=9.2,
+        fontSize=7.0,
+        leading=8.8,
         textColor=colors.HexColor('#0f172a'),
     )
     fig_caption_style = ParagraphStyle(
@@ -190,21 +189,21 @@ def generate_pdf():
         leading=11,
         alignment=TA_CENTER,
         textColor=colors.HexColor('#334155'),
-        spaceBefore=3,
-        spaceAfter=6,
+        spaceBefore=2,
+        spaceAfter=5,
     )
     table_cell_style = ParagraphStyle(
         'TableCell',
         fontName='Times-Roman',
-        fontSize=8.0,
-        leading=10.0,
+        fontSize=7.6,
+        leading=9.5,
         textColor=colors.HexColor('#1e293b'),
     )
     table_hdr_style = ParagraphStyle(
         'TableHdr',
         fontName='Times-Bold',
-        fontSize=8.0,
-        leading=10.2,
+        fontSize=7.8,
+        leading=9.8,
         textColor=colors.white,
     )
 
@@ -212,22 +211,22 @@ def generate_pdf():
 
     # =========================================================================
     # PAGE 1: COVER PAGE
-    # Matches GenAI_assig2.pdf Page 1 layout exactly
+    # Exact 1-to-1 match with GenAI_assig2.pdf Page 1
     # =========================================================================
-    story.append(Spacer(1, 15))
+    story.append(Spacer(1, 14))
     story.append(Paragraph("PRASAD V POTLURI SIDDHARTHA INSTITUTE OF TECHNOLOGY", cover_inst_style))
     story.append(Paragraph("(Autonomous | Approved by AICTE, Accredited with NAAC A+ Grade)", cover_dept_style))
     story.append(Paragraph("DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING", cover_dept_style))
     story.append(Paragraph("ACADEMIC YEAR: 2026-27", cover_meta_style))
-    story.append(Spacer(1, 18))
-    story.append(HRFlowable(width="90%", thickness=1.5, color=colors.HexColor('#1e1b4b'), spaceAfter=18))
+    story.append(Spacer(1, 16))
+    story.append(HRFlowable(width="90%", thickness=1.5, color=colors.HexColor('#1e1b4b'), spaceAfter=16))
     story.append(Paragraph("GENERATIVE AI COURSE PROJECT REPORT", cover_meta_style))
-    story.append(Spacer(1, 12))
+    story.append(Spacer(1, 10))
     story.append(Paragraph("AI-POWERED MULTI-AGENT COLLEGE ADMISSION ASSISTANT", cover_title_style))
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 6))
     story.append(Paragraph("Intelligent Multi-Agent Decision Support and Counselling Recommendation System for Higher Education", cover_sub_style))
-    story.append(Spacer(1, 18))
-    story.append(HRFlowable(width="90%", thickness=1.5, color=colors.HexColor('#1e1b4b'), spaceAfter=22))
+    story.append(Spacer(1, 16))
+    story.append(HRFlowable(width="90%", thickness=1.5, color=colors.HexColor('#1e1b4b'), spaceAfter=20))
 
     meta_table_data = [
         [Paragraph("<b>Faculty Name:</b>", cover_label_style), Paragraph("Dr. Jyothsna K.", cover_val_style)],
@@ -242,14 +241,14 @@ def generate_pdf():
     t_meta = Table(meta_table_data, colWidths=[150, 335])
     t_meta.setStyle(TableStyle([
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
-        ('PADDING', (0,0), (-1,-1), 4.5),
+        ('PADDING', (0,0), (-1,-1), 4.2),
         ('LINEBELOW', (0,0), (-1,-1), 0.5, colors.HexColor('#e2e8f0')),
     ]))
     story.append(t_meta)
     story.append(PageBreak()) # Ends Page 1
 
     # =========================================================================
-    # PAGE 2: CHAPTER 1: INTRODUCTION (1.1, 1.2)
+    # PAGE 2: CHAPTER 1: INTRODUCTION (1.1 Background, 1.2 Problem Statement)
     # =========================================================================
     story.append(Paragraph("CHAPTER 1: INTRODUCTION", h1_style))
     story.append(Paragraph("1.1 Background", h2_style))
@@ -295,7 +294,7 @@ def generate_pdf():
     story.append(PageBreak()) # Ends Page 2
 
     # =========================================================================
-    # PAGE 3: CHAPTER 1: INTRODUCTION (1.3, 1.4, 1.5)
+    # PAGE 3: CHAPTER 1: INTRODUCTION (1.3 Motivation, 1.4 Objectives, 1.5 Scope)
     # =========================================================================
     story.append(Paragraph("1.3 Motivation", h2_style))
     story.append(Paragraph(
@@ -338,7 +337,7 @@ def generate_pdf():
     story.append(PageBreak()) # Ends Page 3
 
     # =========================================================================
-    # PAGE 4: CHAPTER 2: LITERATURE SURVEY (2.1, 2.2 Papers 1-3)
+    # PAGE 4: CHAPTER 2: LITERATURE SURVEY (2.1 Introduction, 2.2 Papers 1-3)
     # =========================================================================
     story.append(Paragraph("CHAPTER 2: LITERATURE SURVEY", h1_style))
     story.append(Paragraph("2.1 Introduction", h2_style))
@@ -353,25 +352,22 @@ def generate_pdf():
     papers_p4 = [
         ("1. ReAct: Synergizing Reasoning and Acting in Language Models [1]",
          "Authors: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao (ICLR, 2023).\n"
-         "Method: Introduces an execution loop that interleaves verbal reasoning traces ('Thoughts') with external tool invocations ('Actions') "
-         "and dynamic environment feedback ('Observations'). This synergetic pattern allows models to maintain task plans while incorporating real-time data.\n"
-         "Application to Project: Directly informs the execution cycle of our specialized agents. When evaluating eligibility, the agent first reasons "
-         "about the candidate's entrance rank and category quota, queries the database tool for verified cutoffs, observes the returned records, and then formats the classification.\n"
-         "Advantages: Substantially mitigates factual hallucination; creates human-auditable cognitive traces for every admission decision.\n"
-         "Limitations: Dependent on prompt structure; prone to repetitive loops if tool outputs fail or return unexpected JSON structures."),
+         "Method: Interleaves reasoning traces ('Thoughts') with external tool invocations ('Actions') and environment feedback ('Observations').\n"
+         "Application to Project: Directly informs our specialized agent decision loops where agents assess candidate rank criteria before emitting recommendation cards.\n"
+         "Advantages: Mitigates hallucination; produces human-auditable cognitive traces for every admission recommendation.\n"
+         "Limitations: Dependent on prompt phrasing; prone to repetitive loops if tool outputs fail or return unexpected JSON structures."),
 
         ("2. Toolformer: Language Models Can Teach Themselves to Use Tools [2]",
          "Authors: Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom (NeurIPS, 2023).\n"
-         "Method: Explores self-supervised learning where language models teach themselves to invoke external tools (calculators, question answering engines, "
-         "and databases) via inline API call syntax without human supervision.\n"
+         "Method: Self-supervised fine-tuning teaching language models when and how to call external APIs.\n"
          "Application to Project: Guides our structured tool schema definition. Mathematical operations—such as calculating net 4-year expenditure, "
-         "hostel surcharges, and rank-to-cutoff delta percentages—are delegated entirely to deterministic Python calculators rather than relying on LLM arithmetic.\n"
+         "hostel surcharges, and rank delta percentages—are delegated entirely to deterministic Python calculators rather than relying on LLM arithmetic.\n"
          "Advantages: Guarantees zero arithmetic error in financial counseling and cutoff comparisons.\n"
          "Limitations: Constrained to isolated API calls; lacks mechanisms for stateful multi-agent turn coordination."),
 
         ("3. Gorilla: Large Language Model Connected with Massive APIs [3]",
          "Authors: Shishir G. Patil, Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez (arXiv:2305.15334, 2023).\n"
-         "Method: Demonstrates fine-tuning and retrieval mechanisms enabling LLMs to accurately parse and call thousands of diverse APIs with precise parameters.\n"
+         "Method: Demonstrates fine-tuning and retrieval mechanisms enabling LLMs to accurately call APIs with precise parameters.\n"
          "Application to Project: Motivates our Pydantic input coercion and schema validation layer guarding the FastAPI endpoints against malformed tool inputs.\n"
          "Advantages: Completely eliminates hallucinated API arguments and ensures reliable database lookups.\n"
          "Limitations: Focuses on single-turn API routing rather than collaborative agent-to-agent negotiations."),
@@ -389,8 +385,7 @@ def generate_pdf():
     papers_p5 = [
         ("4. A Survey on Large Language Model based Autonomous Agents [4]",
          "Authors: Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Jiakai Wang, et al. (Frontiers of Computer Science, 2024).\n"
-         "Method: Formulates a unified conceptual architecture for autonomous agents consisting of four primary modules: Profiling (defining persona and "
-         "domain role), Memory (short-term working state and long-term storage), Planning (task decomposition and reflection), and Action (tool calling).\n"
+         "Method: Formulates a unified conceptual architecture for autonomous agents consisting of four primary modules: Profiling, Memory, Planning, and Action.\n"
          "Application to Project: Serves as the blueprint for our 6 agent profiles. Each agent possesses a specialized system prompt, constrained toolset, "
          "and dedicated role boundaries (e.g., Fee Analysis Agent cannot alter admission eligibility classifications).\n"
          "Advantages: Provides a formal, modular engineering foundation for multi-agent separation of concerns.\n"
@@ -418,11 +413,11 @@ def generate_pdf():
         story.append(Paragraph(f"<b>{title}</b>", h2_style))
         for line in desc.split('\n'):
             story.append(Paragraph(line, body_style))
-        story.append(Spacer(1, 3))
+        story.append(Spacer(1, 2))
     story.append(PageBreak()) # Ends Page 5
 
     # =========================================================================
-    # PAGE 6: CHAPTER 2: LITERATURE SURVEY (2.2 Papers 7-8, Literature Synthesis)
+    # PAGE 6: CHAPTER 2: LITERATURE SURVEY (2.2 Papers 7-8, Synthesis)
     # =========================================================================
     papers_p6 = [
         ("7. Multi-Agent Collaboration for Complex Problem Solving (AutoGen) [7]",
@@ -446,7 +441,7 @@ def generate_pdf():
         story.append(Paragraph(f"<b>{title}</b>", h2_style))
         for line in desc.split('\n'):
             story.append(Paragraph(line, body_style))
-        story.append(Spacer(1, 3))
+        story.append(Spacer(1, 2))
 
     story.append(Paragraph("2.2.1 Synthesis of Surveyed Literature", h2_style))
     story.append(Paragraph(
@@ -486,15 +481,15 @@ def generate_pdf():
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.HexColor('#f8fafc'), colors.white]),
     ]))
     story.append(t_comp)
-    story.append(Spacer(1, 5))
+    story.append(Spacer(1, 4))
 
     story.append(Paragraph("2.4 Research Gap", h2_style))
     story.append(Paragraph(
         "A critical examination of the literature reveals substantial gaps in current academic and commercial implementations:\n"
         "• <b>Absence of Integrated State-Specific Multi-Agent Systems:</b> Existing studies examine LLM reasoning in isolation or evaluate multi-agent "
-        "collaboration on generic coding or math benchmarks. There is no open-access, production-grade system specifically tailored to state-level entrance "
+        "collaboration on generic coding benchmarks. There is no open-access, production-grade system specifically tailored to state-level entrance "
         "counseling dynamics in India, where multi-reservation quotas and government fee reimbursement policies drastically alter admission feasibility.\n"
-        "• <b>Vulnerability to External Outages:</b> Surveyed multi-agent frameworks rely exclusively on hosted commercial APIs (e.g., OpenAI, Anthropic), "
+        "• <b>Vulnerability to External Outages:</b> Surveyed multi-agent frameworks rely exclusively on hosted commercial APIs, "
         "causing entire systems to fail catastrophically during rate limits or service interruptions. Academic literature lacks production designs with "
         "automatic deterministic fallback engines capable of maintaining continuous guidance.\n"
         "• <b>Failure to Enforce Ethical Disclaimers:</b> Commercial aggregator platforms frequently employ persuasive marketing tactics and false admission "
@@ -564,7 +559,7 @@ def generate_pdf():
     fr_list_p9 = [
         ("FR1: User Authentication & Profile Management",
          "The system shall provide secure JWT-based student registration and login. Students shall be able to record and update their academic profile, "
-         "including Intermediate/Class 12 percentage, AP EAPCET entrance rank, reservation category (OC, BC-A/B/C/D/E, SC, ST, EWS), preferred engineering "
+         "including Intermediate percentage, AP EAPCET rank, reservation category (OC, BC-A/B/C/D/E, SC, ST, EWS), preferred engineering "
          "branches, preferred geographic districts, and annual household budget constraints."),
 
         ("FR2: Institutional Directory & Filter Engine (College Finder)",
@@ -596,7 +591,7 @@ def generate_pdf():
     for fr_title, fr_desc in fr_list_p9:
         story.append(Paragraph(f"<b>{fr_title}</b>", h2_style))
         story.append(Paragraph(fr_desc, body_style))
-        story.append(Spacer(1, 2))
+        story.append(Spacer(1, 1.5))
     story.append(PageBreak()) # Ends Page 9
 
     # =========================================================================
@@ -661,7 +656,7 @@ def generate_pdf():
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.HexColor('#f8fafc'), colors.white]),
     ]))
     story.append(t_hw)
-    story.append(Spacer(1, 6))
+    story.append(Spacer(1, 5))
 
     story.append(Paragraph("3.7 Software Requirements", h2_style))
     story.append(Paragraph("Table 3.2 lists the complete software stack, libraries, framework versions, and deployment dependencies utilized across the project.", body_style))
@@ -754,7 +749,7 @@ def generate_pdf():
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.HexColor('#f8fafc'), colors.white]),
     ]))
     story.append(t_agent)
-    story.append(Spacer(1, 6))
+    story.append(Spacer(1, 5))
 
     story.append(Paragraph("4.4 Task Planning and Decomposition", h2_style))
     story.append(Paragraph(
@@ -800,7 +795,7 @@ def generate_pdf():
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.HexColor('#f8fafc'), colors.white]),
     ]))
     story.append(t_tool)
-    story.append(Spacer(1, 6))
+    story.append(Spacer(1, 5))
 
     story.append(Paragraph("4.6 RAG Architecture", h2_style))
     story.append(Paragraph(
@@ -836,8 +831,7 @@ def generate_pdf():
     ))
     story.append(Paragraph("4.8 Agent Communication", h2_style))
     story.append(Paragraph(
-        "Agent-to-agent communication is governed by structured, typed message passing over the LangGraph StateGraph runtime. Figure 4.1 illustrates "
-        "the agent communication topology and state transitions.",
+        "Agent-to-agent communication is governed by structured, typed message passing over the LangGraph StateGraph runtime.",
         body_style
     ))
 
@@ -978,7 +972,7 @@ def generate_pdf():
         "\"\"\""
     )
     story.append(Paragraph(f"<pre>{code_prompt_elig}</pre>", code_style))
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 3))
     story.append(Paragraph(
         "By enforcing strict JSON schema constraints at the system prompt layer, the model is physically prevented from outputting conversational filler, "
         "allowing the FastAPI backend to parse results deterministically into typed response models.",
@@ -1043,7 +1037,7 @@ def generate_pdf():
         "    return workflow.compile()"
     )
     story.append(Paragraph(f"<pre>{code_langgraph}</pre>", code_style))
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 3))
     story.append(Paragraph(
         "This compiled graph structure guarantees that data flows deterministically: the College Finder discovers matching institutions, passes them "
         "to the Eligibility Analyst for tiering, and then passes tiered colleges to the Fee Analyst for financial verification before synthesis.",
@@ -1176,7 +1170,7 @@ def generate_pdf():
 
     # =========================================================================
     # PAGES 23-26: CHAPTER 5: IMPLEMENTATION (8 Screenshots, 2 per page)
-    # Matches GenAI_assig2.pdf Pages 23-26 screenshot layout exactly
+    # Exact 1-to-1 match with GenAI_assig2.pdf Pages 23-26 screenshot layout
     # =========================================================================
     # PAGE 23: Fig 5.1 & Fig 5.2
     story.append(Paragraph("5.16 Application User Interface Tour", h1_style))
@@ -1417,7 +1411,7 @@ def generate_pdf():
         "and median starting salary packages four years post-matriculation based on historical institutional placement trajectories.",
         body_style
     ))
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 6))
 
     story.append(Paragraph("CHAPTER 8: REFERENCES", h1_style))
     story.append(Paragraph("Authoritative academic research papers, books, and technical documentation informing this project:", body_style))
@@ -1443,7 +1437,7 @@ def generate_pdf():
     story.append(PageBreak()) # Ends Page 33
 
     # =========================================================================
-    # PAGE 34: CHAPTER 8: REFERENCES (Part 2: References 8-16)
+    # PAGE 34: CHAPTER 8: REFERENCES (Part 2: References 8-16, End of Report)
     # =========================================================================
     refs_p34 = [
         ("8. Kleinberg, J., Ludwig, J., Mullainathan, S., and Rambachan, A.",
@@ -1468,12 +1462,12 @@ def generate_pdf():
     for r_auth, r_desc in refs_p34:
         story.append(Paragraph(f"• <b>{r_auth}</b> {r_desc}", bullet_style))
 
-    story.append(Spacer(1, 14))
-    story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceAfter=8))
+    story.append(Spacer(1, 10))
+    story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceAfter=6))
     story.append(Paragraph(
         "<font color='#64748b'><b>END OF REPORT — AI-POWERED MULTI-AGENT COLLEGE ADMISSION ASSISTANT</b><br/>"
         "Prasad V. Potluri Siddhartha Institute of Technology | Department of Computer Science & Engineering | Academic Year 2026-2027</font>",
-        ParagraphStyle('EndFooter', parent=body_style, alignment=TA_CENTER, fontSize=8.5, leading=11)
+        ParagraphStyle('EndFooter', parent=body_style, alignment=TA_CENTER, fontSize=8.2, leading=10.5)
     ))
 
     # Build PDF with Academic Numbered Canvas
